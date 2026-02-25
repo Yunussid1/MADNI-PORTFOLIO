@@ -51,21 +51,22 @@ export default function Navigation() {
             }`}
           >
             {/* Logo */}
-            <motion.a
-              href="#home"
-              onClick={(e) => handleNavClick(e, '#home')}
-              className="flex items-center gap-2 group"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="relative w-10 h-10 flex items-center justify-center">
-                <div className="absolute inset-0 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-xl opacity-80 group-hover:opacity-100 transition-opacity" />
-                <span className="relative text-white font-bold text-lg">MK</span>
-              </div>
-              <span className="text-white font-semibold text-lg hidden sm:block">
-                Graphics
-              </span>
-            </motion.a>
+   <motion.a
+  href="#home"
+  onClick={(e) => handleNavClick(e, '#home')}
+  className="flex items-center gap-3 group"
+  whileHover={{ scale: 1.02 }}
+  whileTap={{ scale: 0.98 }}
+>
+  {/* Logo */}
+  <div className="relative w-17 h-16 flex items-center justify-center">
+    <img
+      src="logo.png"
+      alt="MK Graphics Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
+</motion.a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-1">

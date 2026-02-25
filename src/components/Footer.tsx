@@ -37,12 +37,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center">
-                <span className="text-xl font-bold text-white">MK</span>
-              </div>
+              <div className="relative w-17 h-16 flex items-center justify-center">
+    <img
+      src="logo.png"
+      alt="MK Graphics Logo"
+      className="w-full h-full object-contain"
+    />
+  </div>
               <div>
-                <h3 className="text-xl font-bold text-white">MK Graphics</h3>
-                <p className="text-sm text-zinc-400">Creative Design Studio</p>
               </div>
             </div>
             <p className="text-zinc-400 max-w-md mb-6">
